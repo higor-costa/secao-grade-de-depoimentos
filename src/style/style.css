@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --cor-card1: hsl(263, 55%, 52%); 
+    --cor-card2: hsl(217, 19%, 35%); 
+    --cor-card3-card5: hsl(0, 0%, 100%); 
+    --cor-card4: hsl(219, 29%, 14%);
+}
+
+.card1 {
+    background-color: var(--cor-card1);
+}
+
+.card2 {
+    background-color: var(--cor-card2);
+}
+
+.card3, .card5 {
+    background-color: var(--cor-card3-card5);
+}
+
+.card4 {
+    background-color: var(--cor-card4);
+}

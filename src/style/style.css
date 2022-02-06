@@ -16,15 +16,22 @@
     --font-principal: 'Barlow Semi Condensed', sans-serif;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(114, 100, 237);
+}
+
 section {
-    background: lightslategray;
     max-width: 1440px;
     height: 100vh;
     display: grid;
     justify-content: center;
     align-content: center;
-    grid-template-columns: 15em 15em 15em 15em;
-    grid-template-rows: 15em 15em;
+    grid-template-columns: 16em 15em 15em 15em;
+    grid-template-rows: 16em 16em;
     grid-gap: 20px;
     grid-template-areas:
     "card1 card2 card5"
@@ -34,6 +41,7 @@ section {
 
 .card {
     padding: 30px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.426);
     border-radius: 10px;
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-size: 13px;
@@ -42,6 +50,9 @@ section {
     background-color: var(--cor-card1);
     grid-area: card1;
     grid-column: 1 / span 2;
+    background-position-x: 80%;
+    background-image: url(/images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
 }
 
 .card2 {
@@ -73,8 +84,8 @@ section {
 }
 
 .card_avatar {
-    width: 1.7em;
-    height: 1.7em;
+    width: 2.5em;
+    height: 2.5em;
     border: 1px solid white;
     border-radius: 50%;
     margin-right: 15px;
@@ -103,4 +114,43 @@ section {
 
 .card_medio .card_previa-comentario, .card2 .card_previa-comentario {
     color: hsl(210, 46%, 95%);
+}
+
+.card3 .card_previa-comentario, .card5 .card_previa-comentario {
+    color:var(--cor-card4);
+}
+
+.card:not(.card3) .card_previa-comentario {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.card3 .card_previa-comentario {
+    font-size: 1.6em;
+    margin-bottom: 15px;
+}
+
+.card_medio .card_comentario-principal, .card2 .card_comentario-principal {
+    color:hsl(210, 46%, 95%, 70%)
+}
+
+.card3 .card_comentario-principal, .card5 .card_comentario-principal {
+    color:hsl(219, 29%, 14%, 70%);
+}
+
+@media (max-width: 600px) {
+    section {
+        display: inline-block;
+        /* flex-direction: column; */
+    }
+
+    .card {
+        width: 20rem;
+        margin: 25px 0;
+    }
+   
+    .card .card_comentario-principal {
+        font-size: 1em;
+    }
+
 }

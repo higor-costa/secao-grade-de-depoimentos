@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -10,23 +12,32 @@
     --cor-card2: hsl(217, 19%, 35%); 
     --cor-card3-card5: hsl(0, 0%, 100%); 
     --cor-card4: hsl(219, 29%, 14%);
+
+    --font-principal: 'Barlow Semi Condensed', sans-serif;
 }
 
 section {
+    background: lightslategray;
     max-width: 1440px;
     height: 100vh;
     display: grid;
     justify-content: center;
     align-content: center;
     grid-template-columns: 15em 15em 15em 15em;
-    grid-template-rows: 12em 12em;
-    grid-gap: 10px;
+    grid-template-rows: 15em 15em;
+    grid-gap: 20px;
     grid-template-areas:
     "card1 card2 card5"
     "card3 card4 card5";
 
 }
 
+.card {
+    padding: 30px;
+    border-radius: 10px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+} 
 .card1 {
     background-color: var(--cor-card1);
     grid-area: card1;
@@ -55,6 +66,41 @@ section {
     grid-column: 4 / span 1;
 }
 
-p {
-    font-size: 12px;
+.card_perfil {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.card_avatar {
+    width: 1.7em;
+    height: 1.7em;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.card_usuario {
+    display: flex;
+    flex-direction: column;
+}
+
+.card_medio .card_nome, .card2 .card_nome {
+    color: hsl(210, 46%, 95%);
+}
+
+.card_medio .card_status, .card2 .card_status {
+    color: hsl(210, 46%, 95%, 50%);
+}
+
+.card3 .card_nome, .card5 .card_nome {
+    color: var(--cor-card4);
+}
+
+.card3 .card_status, .card5 .card_status {
+    color: hsl(219, 29%, 14%, 50%);
+}
+
+.card_medio .card_previa-comentario, .card2 .card_previa-comentario {
+    color: hsl(210, 46%, 95%);
 }

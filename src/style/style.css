@@ -138,7 +138,7 @@ section {
     color:hsl(219, 29%, 14%, 70%);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1050px) {
     section {
         display: inline-block;
         /* flex-direction: column; */

@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    outline: 1px solid red;
 }
 
 :root {
@@ -17,6 +18,7 @@
 }
 
 body {
+    font-size: 13px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,8 +32,8 @@ section {
     display: grid;
     justify-content: center;
     align-content: center;
-    grid-template-columns: 16em 15em 15em 15em;
-    grid-template-rows: 16em 16em;
+    grid-template-columns: 15rem 15rem 15rem 15rem;
+    grid-template-rows: 16rem 16rem;
     grid-gap: 20px;
     grid-template-areas:
     "card1 card2 card5"
@@ -40,11 +42,10 @@ section {
 }
 
 .card {
-    padding: 30px;
+    padding: 2em;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.426);
     border-radius: 10px;
     font-family: 'Barlow Semi Condensed', sans-serif;
-    font-size: 13px;
 } 
 .card1 {
     background-color: var(--cor-card1);
@@ -120,14 +121,8 @@ section {
     color:var(--cor-card4);
 }
 
-.card:not(.card3) .card_previa-comentario {
-    font-size: 1.5em;
-    margin-bottom: 15px;
-}
-
-.card3 .card_previa-comentario {
-    font-size: 1.6em;
-    margin-bottom: 15px;
+.card .card_previa-comentario {
+   margin-bottom: 15px;
 }
 
 .card_medio .card_comentario-principal, .card2 .card_comentario-principal {
@@ -141,7 +136,6 @@ section {
 @media (max-width: 1050px) {
     section {
         display: inline-block;
-        /* flex-direction: column; */
     }
 
     .card {

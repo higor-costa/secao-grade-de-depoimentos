@@ -17,22 +17,21 @@
 }
 
 body {
+    height: 100vh;
     font-size: 13px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    height: 100vh;
     background-color: rgb(114, 100, 237);
 }
 
 section {
     max-width: 1440px;
-    height: 100vh;
+    background-color: rgb(114, 100, 237);
     display: grid;
-    justify-content: center;
-    align-content: center;
     grid-template-columns: 15rem 15rem 15rem 15rem;
-    grid-template-rows: 16rem 16rem;
+    grid-template-rows: 17rem 17rem;
     grid-gap: 20px;
     grid-template-areas:
     "card1 card2 card5"
@@ -61,7 +60,7 @@ section {
     grid-column: 3 / span 1;
 }
 
-.card3, .card5 {
+.card3 {
     background-color: var(--cor-card3-card5);
     grid-area: card3;
 }
@@ -73,6 +72,7 @@ section {
 }
 
 .card5 {
+    background-color: var(--cor-card3-card5);
     grid-area: card5;
     grid-column: 4 / span 1;
 }
@@ -122,6 +122,8 @@ section {
 
 .card .card_previa-comentario {
    margin-bottom: 15px;
+   font-weight: bold;
+   font-size: 1.3em;
 }
 
 .card_medio .card_comentario-principal, .card2 .card_comentario-principal {
@@ -132,18 +134,51 @@ section {
     color:hsl(219, 29%, 14%, 70%);
 }
 
-@media (max-width: 1050px) {
+.rodape {
+    background-color: white;
+}
+
+@media (min-width: 851px) and (max-width: 1060px) {
+    body {
+        height: 100%;
+    }
+
     section {
-        display: inline-block;
+        padding: 2em 0px;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        grid-template-columns: 15rem 15rem 15rem;
+        grid-template-rows: 16rem 16rem 16rem;
+        grid-template-areas:
+        "card1 card1 card2"
+        "card3 card4 card4"
+        "card5 card5 card5";
+    }
+
+    .card5 {
+        grid-column: 1 / span 3;
+    }
+}
+
+@media (max-width: 850px) {
+    body {
+        height: 100%;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        padding: 2em 0;
     }
 
     .card {
         width: 20rem;
-        margin: 25px 0;
+        margin: 0 0 10px 0;
     }
    
     .card .card_comentario-principal {
         font-size: 1em;
     }
-
+    
 }

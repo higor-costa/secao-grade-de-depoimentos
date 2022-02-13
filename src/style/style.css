@@ -21,14 +21,15 @@ body {
     font-size: 13px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    background-color: rgb(114, 100, 237);
+    background-image: linear-gradient(to bottom, #5A23DB, #2F1C5C);
 }
 
 section {
     max-width: 1440px;
-    background-color: rgb(114, 100, 237);
+    margin-top: 2em;
+    background-image: linear-gradient(to bottom, #5A23DB, #2F1C5C);
     display: grid;
     grid-template-columns: 15rem 15rem 15rem 15rem;
     grid-template-rows: 17rem 17rem;
@@ -136,6 +137,24 @@ section {
 
 .rodape {
     background-color: white;
+    width: -webkit-fill-available;
+    text-align: center;
+    padding: 4px 0;
+    font-weight: bold;
+    
+}
+
+.attribution {
+    color: var(--cor-card4);
+}
+
+a {
+    color: var(--cor-card1);
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 @media (min-width: 851px) and (max-width: 1060px) {
@@ -159,6 +178,7 @@ section {
     .card5 {
         grid-column: 1 / span 3;
     }
+
 }
 
 @media (max-width: 850px) {

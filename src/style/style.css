@@ -46,7 +46,7 @@ section {
     border-radius: 10px;
     font-family: 'Barlow Semi Condensed', sans-serif;
 } 
-.card1 {
+.card_violeta {
     background-color: var(--cor-card1);
     grid-area: card1;
     grid-column: 1 / span 2;
@@ -55,24 +55,24 @@ section {
     background-repeat: no-repeat;
 }
 
-.card2 {
+.card_acinzentado {
     background-color: var(--cor-card2);
     grid-area: card2;
     grid-column: 3 / span 1;
 }
 
-.card3 {
+.card_branco-pequeno {
     background-color: var(--cor-card3-card5);
     grid-area: card3;
 }
 
-.card4 {
+.card_azul-escuro {
     background-color: var(--cor-card4);
     grid-area: card4;
     grid-column: 2 / span 2;
 }
 
-.card5 {
+.card_branco-grande {
     background-color: var(--cor-card3-card5);
     grid-area: card5;
     grid-column: 4 / span 1;
@@ -97,27 +97,27 @@ section {
     flex-direction: column;
 }
 
-.card_medio .card_nome, .card2 .card_nome {
+.card_medio .card_nome, .card_acinzentado .card_nome {
     color: hsl(210, 46%, 95%);
 }
 
-.card_medio .card_status, .card2 .card_status {
+.card_medio .card_status, .card_acinzentado .card_status {
     color: hsl(210, 46%, 95%, 50%);
 }
 
-.card3 .card_nome, .card5 .card_nome {
+.card_branco-pequeno .card_nome, .card_branco-grande .card_nome {
     color: var(--cor-card4);
 }
 
-.card3 .card_status, .card5 .card_status {
+.card_branco-pequeno .card_status, .card_branco-grande .card_status {
     color: hsl(219, 29%, 14%, 50%);
 }
 
-.card_medio .card_previa-comentario, .card2 .card_previa-comentario {
+.card_medio .card_previa-comentario, .card_acinzentado .card_previa-comentario {
     color: hsl(210, 46%, 95%);
 }
 
-.card3 .card_previa-comentario, .card5 .card_previa-comentario {
+.card_branco-pequeno .card_previa-comentario, .card_branco-grande .card_previa-comentario {
     color:var(--cor-card4);
 }
 
@@ -127,11 +127,11 @@ section {
    font-size: 1.3em;
 }
 
-.card_medio .card_comentario-principal, .card2 .card_comentario-principal {
+.card_medio .card_comentario-principal, .card_acinzentado .card_comentario-principal {
     color:hsl(210, 46%, 95%, 70%)
 }
 
-.card3 .card_comentario-principal, .card5 .card_comentario-principal {
+.card_branco-pequeno .card_comentario-principal, .card_branco-grande .card_comentario-principal {
     color:hsl(219, 29%, 14%, 70%);
 }
 
@@ -175,7 +175,7 @@ a:hover {
         "card5 card5 card5";
     }
 
-    .card5 {
+    .card_branco-grande {
         grid-column: 1 / span 3;
     }
 

@@ -53,4 +53,4 @@ Um excelente projeto para praticar grid, flexbox e media queries
 - Linkedin - [higor-costa-](https://www.linkedin.com/in/higor-costa-/)
 - Mentor de frontend - [@higor-costa](https://www.frontendmentor.io/profile/higor-costa)
 - GitHub - [@higor-costa](https://github.com/higor-costa)
-- E-mail - [@higorcosta972](higorcosta972@gmail.com)
+- E-mail - [higorcosta972@gmail.com](higorcosta972@gmail.com)

@@ -22,13 +22,14 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: linear-gradient(to bottom, #5A23DB, #2F1C5C);
+    background-color: whitesmoke;
+    /* background-image: linear-gradient(to bottom, #5A23DB, #2F1C5C); */
 }
 
 .principal {
     max-width: 1440px;
     height: 100%;
-    background-image: linear-gradient(to bottom, #5A23DB, #2F1C5C);
+    /* background-image: linear-gradient(to bottom, #5A23DB, #2F1C5C); */
     display: grid;
     justify-content: center;
     align-content: center;
@@ -148,10 +149,12 @@ body {
 }
 
 .rodape {
-    background-color: white;
+    background-color: whitesmoke;
     text-align: center;
+    font-size: 15px;
     padding: 4px 0;
     font-weight: bold;
+    box-shadow: 1px 0 3px black;
     
 }
 
@@ -225,6 +228,14 @@ a:hover {
    
     .card .card_comentario-principal {
         font-size: 1em;
+    }
+
+    .rodape {
+        font-size: 13px;
+    }
+
+    a {
+        text-decoration: underline;
     }
     
 } 

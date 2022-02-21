@@ -50,7 +50,7 @@ section {
     grid-area: card1;
     grid-column: 1 / span 2;
     background-position-x: 80%;
-    background-image: url(/images/bg-pattern-quotation.svg);
+    background-image: url(images/bg-pattern-quotation.svg);
     background-repeat: no-repeat;
 }
 

@@ -25,7 +25,7 @@ body {
     background-image: linear-gradient(to bottom, #5A23DB, #2F1C5C);
 }
 
-section {
+.principal {
     max-width: 1440px;
     padding: 1.5em 0 0;
     background-image: linear-gradient(to bottom, #5A23DB, #2F1C5C);
@@ -168,14 +168,14 @@ a:hover {
 }
 
 @media only screen and (min-width: 1201px) and (max-width: 1330px) {
-    section {
+    .principal {
         grid-template-columns: repeat(4, 20%);
         padding: 1em 0 0;
     }
 }
 
 @media only screen and (min-width: 1080px) and (max-width: 1200px) {
-    section {
+    .principal {
         padding: 1em 0 0;
         grid-template-columns: repeat(4, 22%);
         grid-template-areas:
@@ -189,7 +189,7 @@ a:hover {
         height: 100%;
     }
 
-    section {
+    .principal {
         padding: 1.5em 0;
         grid-template-columns: repeat(3, 28%);
         grid-template-areas:
@@ -209,7 +209,7 @@ a:hover {
         height: 100%;
     }
 
-    section {
+    .principal {
         display: flex;
         justify-content: center;
         align-items: center;
